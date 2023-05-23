@@ -11,18 +11,20 @@ import CoreImage.CIFilterBuiltins
 
 struct MeView: View {
     @State var name = "Hari"
-    @State var email = "something@gmail.com"
+    @State var email = "harikrishnakesineni@gmail.com"
     let context = CIContext()
     let filter = CIFilter.qrCodeGenerator()
     var body: some View {
-        VStack {
-            TextField("Enter your name", text: $name)
-            TextField("Enter your email", text: $email)
-            Image(uiImage: generateQrCode(string: "\(name) \n \(email)"))
-                .resizable()
-                .interpolation(.none)
-                .scaledToFit()
-                .frame(width: 200, height: 200)
+        NavigationStack {
+            Form {
+                TextField("Enter your name", text: $name)
+                TextField("Enter your email", text: $email)
+                Image(uiImage: generateQrCode(string: "\(name) \n \(email)"))
+                    .resizable()
+                    .interpolation(.none)
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+            }
         }
     }
     
