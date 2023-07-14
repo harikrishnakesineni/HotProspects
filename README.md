@@ -1,7 +1,7 @@
 
 # Hotprospects
 
-Hotprospects is a SwiftUI app to track all contacts, Contacted contacts and UnContacted contacts.  It will show a QR code that sotes your contact information.  Implemented QR code that stores your contact information, then others can scan that QR code.
+Hotprospects is a SwiftUI app to track all contacts, Contacted contacts and UnContacted contacts.  It will show a QR code that stores your contact information.  Implemented QR code that stores your contact information, then others can scan that QR code.
 
 
 ## Features
